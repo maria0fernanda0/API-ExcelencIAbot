@@ -1,19 +1,18 @@
 package com.excelencia.chatbot.dto.chatbot;
 
-import lombok.Data;
 import jakarta.validation.constraints.NotBlank;
 
 public class ChatbotRequest {
 
     @NotBlank(message = "A mensagem não pode ser vazia")
-    private String mensagem;
+    private String pergunta;
 
-    public String getMensagem() {
-        return mensagem;
+    public String getPergunta() {
+        return pergunta;
     }
 
-    public void setMensagem(String mensagem) {
-        this.mensagem = mensagem;
+    public void setPergunta(String pergunta) {
+        this.pergunta = pergunta;
 
     }
 }

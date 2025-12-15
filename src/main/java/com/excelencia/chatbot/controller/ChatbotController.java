@@ -24,7 +24,7 @@ public class ChatbotController {
      */
     @PostMapping("/pergunta")
     public ResponseEntity<ChatbotResponse> enviarPergunta(@Valid @RequestBody ChatbotRequest request) {
-        ChatbotResponse resposta = chatbotService.processarMensagem(request);
+        ChatbotResponse resposta = chatbotService.processarPergunta(request);
         return ResponseEntity.ok(resposta);
     }
 
